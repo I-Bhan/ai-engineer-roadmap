@@ -1,0 +1,9 @@
+PYTHON    is a popular programming LANGUAGE.
+
+Lists and Dictionaries are important DATA structures.
+
+Functions help organize code and improve REUSABILITY.
+
+File Handling allows programs to READ and WRITE files.
+
+Learning Python is essential for AI ENGINEERS.

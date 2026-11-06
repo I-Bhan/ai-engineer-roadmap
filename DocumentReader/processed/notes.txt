@@ -1,0 +1,1 @@
+python is a popular programming language. lists and dictionaries are important data structures. functions help organize code and improve reusability. file handling allows programs to read and write files. learning python is essential for ai engineers.
