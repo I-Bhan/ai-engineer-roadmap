@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "contract.txt",
+        "status": "processed"
+    },
+    {
+        "id": 2,
+        "name": "report.txt",
+        "status": "processed"
+    },
+    {
+        "id": 3,
+        "name": "notes.txt",
+        "status": "pending"
+    }
+]
