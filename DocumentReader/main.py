@@ -1,18 +1,19 @@
-from Toolkit import *
+from processor import clean_text,count_words
 from pathlib import Path
-
+from reader import read_document
+from storage import save_document
 folder = Path("Documents/")
 file= folder.glob("*.txt")
 output=Path("processed/")
 output.mkdir(parents=True, exist_ok=True)
 processed_count=0
 for fil in file:
-    contents = fil.read_text(encoding="utf-8")
+    contents = read_document(fil)
     contents = clean_text(contents)
     count_contents = count_words(contents)
-    output_file = output / fil.name
-    output_file.write_text(contents,encoding="utf-8")
+    saved_path=save_document( output / fil.name,contents)
     processed_count += 1
     print(contents)
     print(f"{fil.name}: {count_contents}")
+    print(f"Saved: {saved_path}")
 print(f"Total Files Processed: {processed_count}")
